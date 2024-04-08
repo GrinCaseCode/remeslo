@@ -1300,12 +1300,19 @@
     }
     .tag-category {
         height: 36px;
-        padding: 0 15px;
+        padding: 0 11px;
         margin-right: 5px;
+        font-size: 12px;
         margin-top: 4px;
     }
     .tag-category.tag-category_main {
         min-width: 125px;
+    }
+    .tag-category:last-child {
+        margin-right: 10px;
+    }
+    .ic-tag {
+        margin-left: -6px;
     }
     .row_categories .col-lg-7,
     .row_categories .col-lg-5 {
