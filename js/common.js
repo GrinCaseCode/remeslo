@@ -25,21 +25,22 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		if ($(window).width() < 992) { 
 				//кнопка sandwich
 				$(".sandwich").click(function() {
-					
 					if ($(".menu-mobile").is(":hidden")) {
 						$(".menu-mobile").slideDown(200);
 						$(".menu-overlay").fadeIn(200);
 						$(this).addClass("active");
+						$(".header").addClass("active");
 					} else {
 						$(".menu-mobile").slideUp(200);
 						$(".menu-overlay").fadeOut(200);
-						$(this).removeClass("active");
+						$(".header").removeClass("active");
 					}
 				});
 				$(".menu-overlay").click(function() {
 					$(".menu-mobile").slideUp(200);
 					$(".menu-overlay").fadeOut(200);
 					$(".sandwich").removeClass("active");
+					$(".header").removeClass("active");
 				});
 		}
 	}

@@ -1123,8 +1123,9 @@
         display: block;
         transition: all 0.3s;
     }
-    .footer__title.active i {
-        transform: rotate(180deg);
+    .footer__title.active img {
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
     }
     .footer-bottom .row > div {
         padding-bottom: 10px;
@@ -1190,13 +1191,18 @@
         padding-top: 25px;
     }
     .menu-overlay {
-        top: 66px;
+        top: 87px;
         left: 0;
         right: 0;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.7);
         position: fixed;
         z-index: -1;
+    }
+    .header.active {
+        background: #020b0d;
+        padding: 10px 0;
+        top: 0;
     }
 }
 
@@ -1543,7 +1549,17 @@
         border-radius: 20px;
         padding-top: 20px;
     }
-
+    .billbord .title-big {
+        max-width: 330px;
+    }
+    .title-categories {
+        width: 345px;
+        height: 225px;
+        padding: 0 52px;
+        padding-top: 85px;
+        margin: 0 auto;
+        margin-top: -113px;
+    }
 }
 
 /* Custom, iPhone Retina */
