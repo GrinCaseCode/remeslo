@@ -1264,11 +1264,13 @@
     }
     .billbord__buttons {
         display: block;
+        text-align: center;
         padding-top: 18px;
     }
     .billbord__buttons .btn-main {
         width: 334px;
         max-width: 100%;
+        margin: 0;
         margin-top: 15px;
     }
     .about__block,
