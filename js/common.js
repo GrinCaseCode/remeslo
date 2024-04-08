@@ -33,6 +33,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 					} else {
 						$(".menu-mobile").slideUp(200);
 						$(".menu-overlay").fadeOut(200);
+						$(this).removeClass("active");
 						$(".header").removeClass("active");
 					}
 				});

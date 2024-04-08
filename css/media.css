@@ -1204,6 +1204,12 @@
         padding: 10px 0;
         top: 0;
     }
+    .item-advantage {
+        border-radius: 3px;
+    }
+    .item-step__content {
+        border-radius: 4px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -1534,6 +1540,7 @@
         padding-top: 72px;
         padding-left: 136px;
         margin-top: -104px;
+        margin-bottom: 20px;
     }
     .steps__title .title-section {
         font-size: 23px;
