@@ -352,6 +352,7 @@ form {
 	background: #06D1EA;
 	position: relative;
 	z-index: 1;
+	transition: all 0.7s;
 }
 .btn-main.btn-main_page {
 	background: none;
