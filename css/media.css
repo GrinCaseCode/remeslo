@@ -1572,6 +1572,9 @@
         width: 150px;
         height: 150px;
     }
+    .btn-main_billbord::after {
+        background-image: url(../img/btn1.svg);
+    }
 }
 
 /* Extra Small Devices, Phones */
