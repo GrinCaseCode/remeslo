@@ -57,7 +57,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		touchThreshold: 1000,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		speed: 8000,
+		speed: 16000,
         autoplay: true,
 		variableWidth: true,
         autoplaySpeed: 0, 
@@ -144,6 +144,10 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(this).parent().siblings(".item-question").find(".item-question__content").slideUp(200);
 	  });
 
+
+
+
+	
 	var properties = {
 		duration: 15000,     // Длительность движения в миллисекундах, чем больше тем медленнее.
 		direction: 'left',  // Направление, может быть 'left' или 'right'.
