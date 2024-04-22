@@ -1838,6 +1838,9 @@ form {
 .wrapper_page .header .logo img {
 	filter: brightness(0%);
 } 
+.wrapper_page .menu a:hover {
+	color: #AFFF48;
+}
 .wrapper_page .menu {
 	background-image: url(../img/bg_menu2.svg);
 }
