@@ -88,89 +88,60 @@
 			<div class="menu-overlay"></div>
 		</header>
 
-		<section class="page page_contacts">
+		<section class="page page_card">
 			<div class="container">
-				<div class="row row_contacts">
-					<div class="col-lg-4 col-md-6">
-						<div class="contacts-title">
-							<h2 class="title-section">Контакты</h2>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="item-contact">
-							<strong>Для связи:</strong>
-							<p><a href="tel:+79787470272"><strong>+7 (978) 747-02-72</strong></a></p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="item-contact">
-							<strong>Мессенджеры:</strong>
-							<ul class="list-socials">
-								<li><a href="#" target="_blank"><img src="img/soc1.svg" alt="alt"></a></li>
-								<li><a href="#" target="_blank"><img src="img/soc2.svg" alt="alt"></a></li>
-								<li><a href="#" target="_blank"><img src="img/soc3.svg" alt="alt"></a></li>
-								<li><a href="#" target="_blank"><img src="img/soc4.svg" alt="alt"></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-6">
-						<div class="item-contact">
-							<strong>Для заказов:</strong>
-							<p><a href="tel:+79785864013"><strong>+7 (978) 586-40-13</strong></a></p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-contact">
-							<p><strong>Адрес:</strong>  Республика Крым, <br>. Симферополь, ул. Севастопольская, 123</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="item-contact">
-							<strong>Режим работы:</strong>
-							<p>Пн-Пт с 10:00 до 18:00 мск</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="item-contact">
-							<strong>Почта:</strong>
-							<p><a href="mailto:sales@remeslo-opt.ru">sales@remeslo-opt.ru</a></p>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-6">
-						<div class="item-contact">
-							<strong>График приема заказов:</strong>
-							<p>Пн-Пт с 10.00 до 19.00 мск</p>
-						</div>
-					</div>
-				</div>
+				<ul class="breadcrumbs">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Браслеты</a></li>
+					<li>Браслет деревянный</li>
+				</ul>
 				<div class="row">
 					<div class="col-lg-4">
-						<div class="form-page">
-							<div class="form-page__title">Форма связи</div>
-							<form>
-								<div class="item-form">
-									<input type="text" placeholder="ФИО" required="required">
+						<ul class="slider-for">
+							<li>
+								<a href="img/for1.jpg" class="slider-for__item fancybox" data-fancybox="card">
+									<img src="img/for1.jpg" alt="alt">
+								</a>
+							</li>
+							<li>
+								<a href="img/for1.jpg" class="slider-for__item fancybox" data-fancybox="card">
+									<img src="img/for1.jpg" alt="alt">
+								</a>
+							</li>
+						</ul>
+						<ul class="slider-nav">
+							<li>
+								<div class="slider-nav__item">
+									<img src="img/nav1.jpg" alt="alt">
 								</div>
-								<div class="item-form">
-									<input type="text" placeholder="Телефон" class="input-phone" required="required">
+							</li>
+							<li>
+								<div class="slider-nav__item">
+									<img src="img/nav2.jpg" alt="alt">
 								</div>
-								<div class="item-form">
-									<input type="email" placeholder="E-mail" required="required">
-								</div>
-								<div class="btn-main">
-									<input type="submit" value="Отправить">
-								</div>
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" required="required" checked="checked" />
-										<span>Согласие на обработку персональных данных</span>
-									</label>
-								</div>
-							</form>
-						</div>
+							</li>
+						</ul>
 					</div>
 					<div class="col-lg-8">
-						<div id="map"></div>
+						<h1 class="title-card">Браслет деревянный</h1>
+						<div class="info-card">
+							<p>ОПИСАНИЕ:</p>
+							<ul>
+								<li>Материал: <span>фанера 5 мм</span></li>
+								<li>Размер: <span>2 см</span></li>
+								<li>Печать: <span>прямая, залитая ювелирной смолой</span></li>
+								<li>Крепление: <span>вощёный шнур</span></li>
+								<li>В индивидуальной фирменной упаковке</li>
+							</ul>
+						</div>
+						<div class="quantity">
+							<div class="quantity-button quantity-down"></div>
+							<input type="number" min="1" step="1" value="10">
+							<div class="quantity-button quantity-up"></div>
+						</div>
+						<div class="price-main">от 40 ₽/шт</div>
+						<a href="#" class="btn-main">Заказать</a>
 					</div>
 				</div>
 			</div>
@@ -265,6 +236,32 @@
 		
 	</div>
 
+	<div id="modal-callback" class="modal-block">
+		<div class="form-page">
+			<div class="form-page__title">Форма связи</div>
+			<form>
+				<div class="item-form">
+					<input type="text" placeholder="ФИО" required="required">
+				</div>
+				<div class="item-form">
+					<input type="text" placeholder="Телефон" class="input-phone" required="required">
+				</div>
+				<div class="item-form">
+					<input type="email" placeholder="E-mail" required="required">
+				</div>
+				<div class="btn-main">
+					<input type="submit" value="Отправить">
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" required="required" checked="checked" />
+						<span>Согласие на обработку персональных данных</span>
+					</label>
+				</div>
+			</form>
+		</div>
+	</div>
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -279,36 +276,6 @@
 	<script src="libs/mask/jquery.maskedinput.js"></script>
 	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
 	<script src="js/common.js?ver=1.11"></script>
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-	<script>
-		$(document).ready(function() {
-		ymaps.ready(init);
-
-		function init() {
-			var myMap = new ymaps.Map('map', {
-				center: [44.918330, 34.075012],
-				zoom: 15
-			}, {
-				searchControlProvider: 'yandex#search'
-			});		
-			myPlacemark = new ymaps.Placemark([44.918330, 34.075012], {
-			}, {
-				iconLayout: 'default#image',
-				iconImageHref: 'img/pin.svg',
-				hideIconOnBalloonOpen: false,
-				iconImageSize: [36, 55],
-				iconImageOffset: [-18, -55],
-				balloonOffset: [ 0, -55 ]
-			});
-
-			myMap.controls.remove('searchControl');
-			myMap.behaviors.disable('scrollZoom');
-			myMap.geoObjects.add(myPlacemark);
-
-		}
-	});
-	
-	</script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
