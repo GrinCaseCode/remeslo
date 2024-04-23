@@ -126,6 +126,31 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 					]
 				});
 
+				$('.slider-for').slick({
+					arrows: false,
+					dots: false,
+					infinite: false,
+					touchThreshold: 1000,
+					asNavFor: $('.slider-nav'),
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+					nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+				});
+
+				$('.slider-nav').slick({
+					arrows: false,
+					dots: false,
+					infinite: false,
+					touchThreshold: 1000,
+					focusOnSelect: true,
+					asNavFor: $('.slider-for'),
+					slidesToShow: 4,
+					slidesToScroll: 1,
+					prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+					nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+				});
+
 				{
 					if ($(window).width() < 992) { 
 						$(".footer__title").click(function() {
@@ -144,7 +169,36 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(this).parent().siblings(".item-question").find(".item-question__content").slideUp(200);
 	  });
 
+	  jQuery('.quantity').each(function() {
+		var spinner = jQuery(this),
+		input = spinner.find('input[type="number"]'),
+		btnUp = spinner.find('.quantity-up'),
+		btnDown = spinner.find('.quantity-down'),
+		min = input.attr('min'),
+		max = input.attr('max');
 
+		btnUp.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue >= max) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue + 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+
+		btnDown.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue <= min) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue - 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+	});
 
 
 	
