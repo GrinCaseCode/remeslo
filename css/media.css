@@ -1909,8 +1909,11 @@
         padding-top: 43px;
         padding-left: 53px;
         margin: 0 auto;
-        margin-bottom: 15px;
+        margin-bottom: 0px;
         text-align: left;
+    }
+    .image-thanks img {
+        max-width: 375px;
     }
     .image-thanks {
         overflow: hidden;
@@ -2488,6 +2491,10 @@
     }
     .billbord-article {
         height: 210px;
+    }
+    .news-title {
+        margin: 0 auto;
+        margin-bottom: -16px;
     }
 }
 
