@@ -2553,3 +2553,53 @@ input[type=number]
 	padding-bottom: 40px;
 	padding-top: 0;
 }
+
+.menu-dropdown {
+	top: 100%;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	display: none;
+}
+.content-dropdown {
+	padding: 53px 106px;
+	color: #fff;
+	background: linear-gradient(180deg, #02080A -4.69%, #02090B 17.84%, #05151B 122.69%), linear-gradient(74.27deg, rgba(0, 0, 0, 0) 4.77%, rgba(16, 201, 225, 0.02) 57.56%);
+	border: 1px solid rgba(16, 201, 225, 0.1);
+	border-radius: 48px;
+}
+.menu-dropdown__title {
+	font-size: 20px;
+	margin-bottom: 35px;
+	line-height: 150%;
+	font-weight: 600;
+	color: #10c9e1;
+}
+.menu-dropdown__list {
+	font-size: 18px;
+	line-height: 23px;
+}
+.menu-dropdown__list li {
+	margin-bottom: 35px;
+}
+.menu-dropdown__list a {
+	color: #fff;
+}
+.menu-dropdown p a:hover,
+.menu-dropdown__list a:hover {
+	color: #AFFF48;
+}
+.menu-dropdown .col-lg-6 .menu-dropdown__list {
+	max-width: 440px;
+	columns: 2;
+}
+.menu-dropdown p a {
+	color: #fff;
+}
+.phone-menu {
+	font-size: 20px;
+}
+.menu-dropdown__title:not(:first-child) {
+	margin-top: 60px;
+	margin-bottom: 28px;
+}

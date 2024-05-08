@@ -21,31 +21,36 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	//плавный скролл
 	$(".navigat li a").mPageScroll2id();
 
-	{
-		if ($(window).width() < 992) { 
-				//кнопка sandwich
-				$(".sandwich").click(function() {
-					if ($(".menu-mobile").is(":hidden")) {
-						$(".menu-mobile").slideDown(200);
-						$(".menu-overlay").fadeIn(200);
-						$(this).addClass("active");
-						$(".header").addClass("active");
-					} else {
-						$(".menu-mobile").slideUp(200);
-						$(".menu-overlay").fadeOut(200);
-						$(this).removeClass("active");
-						$(".header").removeClass("active");
-					}
-				});
-				$(".menu-overlay").click(function() {
-					$(".menu-mobile").slideUp(200);
-					$(".menu-overlay").fadeOut(200);
-					$(".sandwich").removeClass("active");
-					$(".header").removeClass("active");
-				});
+	//кнопка sandwich
+	$(".sandwich").click(function() {
+		if ($(".menu-dropdown").is(":hidden")) {
+			$(".menu-dropdown").slideDown(200);
+			$(".menu-overlay").fadeIn(200);
+			$(this).addClass("active");
+			$(".header").addClass("active");
+		} else {
+			$(".menu-dropdown").slideUp(200);
+			$(".menu-overlay").fadeOut(200);
+			$(this).removeClass("active");
+			$(".header").removeClass("active");
 		}
-	}
+	});
+	$(".menu-overlay").click(function() {
+		$(".menu-dropdown").slideUp(200);
+		$(".menu-overlay").fadeOut(200);
+		$(".sandwich").removeClass("active");
+		$(".header").removeClass("active");
+	});
 
+	$(document).mouseup(function (e) {
+		var container = $(".menu-dropdown");
+		if (container.has(e.target).length === 0){
+			$(".menu-dropdown").slideUp(200);
+			$(".menu-overlay").fadeOut(200);
+			$(".sandwich").removeClass("active");
+			$(".header").removeClass("active");
+		}
+	  });
 
 
 	//слайдер

@@ -772,6 +772,28 @@
     .article-content ul {
         max-width: 770px;
     }
+
+    .content-dropdown {
+        padding: 40px 70px;
+    }
+    .menu-dropdown__title {
+        font-size: 18px;
+        margin-bottom: 27px;
+    }
+    .menu-dropdown__list {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .menu-dropdown__list li {
+        margin-bottom: 28px;
+    }
+    .menu-dropdown__title:not(:first-child) {
+        margin-top: 43px;
+        margin-bottom: 20px;
+    }
+    .phone-menu {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width : 1380px) {
@@ -1128,6 +1150,28 @@
     .article-content h2 {
         font-size: 26px;
         margin: 18px 0;
+    }
+
+    .content-dropdown {
+        padding: 30px 45px;
+    }
+    .menu-dropdown__title {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .menu-dropdown__list {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .menu-dropdown .col-lg-6 .menu-dropdown__list {
+        max-width: 380px;
+    }
+    .menu-dropdown__list li {
+        margin-bottom: 24px;
+    }
+    .menu-dropdown__title:not(:first-child) {
+        margin-top: 28px;
+        margin-bottom: 15px;
     }
 }
 /* Large Devices, Wide Screens */
@@ -1596,6 +1640,10 @@
     .billbord-article {
         margin-bottom: 25px;
     }
+
+    .menu-dropdown .col-lg-6 .menu-dropdown__list {
+        max-width: 333px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -1937,6 +1985,38 @@
     }
     .page.page_card {
         padding-bottom: 60px;
+    }
+
+    .menu-dropdown {
+        padding-top: 10px;
+        max-height: 100vh;
+        overflow: auto;
+        padding-bottom: 110px;
+        background: linear-gradient(180deg, #02080A -4.69%, #02090B 17.84%, #05151B 122.69%), linear-gradient(74.27deg, rgba(0, 0, 0, 0) 4.77%, rgba(16, 201, 225, 0.02) 57.56%);
+        border: 1px solid rgba(16, 201, 225, 0.1);
+    }
+    .content-dropdown {
+        border: none;
+        background: transparent;
+        border-radius: 0;
+        padding: 0;
+    }
+    .menu-dropdown__title {
+        margin: 15px 0;
+    }
+    .menu-dropdown__list li {
+        margin-bottom: 17px;
+    }
+    .wrapper_page .menu-mobile, 
+    .wrapper_page .header.active {
+        background: #020b0d;
+    }
+    .wrapper_page .header.active .logo img {
+        filter: initial;
+    } 
+    .wrapper_page .header.active {
+        top: 0;
+        box-shadow: none;
     }
 }
 
